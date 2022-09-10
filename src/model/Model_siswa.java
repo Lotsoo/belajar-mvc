@@ -128,23 +128,23 @@ public class Model_siswa implements controller.Controller_siswa {
     
     @Override
     public void KlikTabel(Form_siswa siswa) throws SQLException {
-//        try {
-//            int pilih = siswa.tabel.getSelectedRow();
-//            if (pilih == -1) {
-//                return;
-//            }
-//            siswa.txtNIS.setText(siswa.tblmodel.getValueAt(pilih, 0).toString());
-//            siswa.txtNama.setText(siswa.tblmodel.getValueAt(pilih, 1).toString());
-//            siswa.cbJurusan.setSelectedItem(siswa.tblmodel.getValueAt(pilih, 3).toString());
-//            jk = String.valueOf(siswa.tblmodel.getValueAt(pilih, 2));
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
-//        if (siswa.rbLaki.getText().equals(jk)) {
-//            siswa.rbLaki.setSelected(true);
-//        } else {
-//            siswa.rbPerempuan.setSelected(true);
-//        }
+        try {
+            int pilih = siswa.tabel.getSelectedRow();
+            if (pilih == -1) {
+                return;
+            }
+            siswa.txtNIS.setText(siswa.tblmodel.getValueAt(pilih, 0).toString());
+            siswa.txtNama.setText(siswa.tblmodel.getValueAt(pilih, 1).toString());
+            siswa.cbJurusan.setSelectedItem(siswa.tblmodel.getValueAt(pilih, 3).toString());
+            jk = String.valueOf(siswa.tblmodel.getValueAt(pilih, 2));
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        if (siswa.rbLaki.getText().equals(jk)) {
+            siswa.rbLaki.setSelected(true);
+        } else {
+            siswa.rbPerempuan.setSelected(true);
+        }
     }
     
 }
