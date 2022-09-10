@@ -78,21 +78,21 @@ public class Model_siswa implements controller.Controller_siswa {
     
     @Override
     public void Hapus(Form_siswa siswa) throws SQLException {
-//        try {
-//            Connection con = Koneksi.getcon();
-//            String sql = "delete from siswa where nis=?";
-//            PreparedStatement prepare = con.prepareStatement(sql);
-//            prepare.setString(1, siswa.txtNIS.getText());
-//            prepare.executeUpdate();
-//            JOptionPane.showMessageDialog(null, "Data berhasil dihapus");
-//            prepare.close();
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        } finally {
-//            Tampil(siswa);
-//            siswa.setLebarKolom();
-//            Baru(siswa);
-//        }
+        try {
+            Connection con = Koneksi.getcon();
+            String sql = "delete from siswa where nis=?";
+            PreparedStatement prepare = con.prepareStatement(sql);
+            prepare.setString(1, siswa.txtNIS.getText());
+            prepare.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Data berhasil dihapus");
+            prepare.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            Tampil(siswa);
+            siswa.setLebarKolom();
+            Baru(siswa);
+        }
     }
     
     @Override
