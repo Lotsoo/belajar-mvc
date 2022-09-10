@@ -69,8 +69,7 @@ public class Form_siswa extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         txtNIS = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -98,9 +97,11 @@ public class Form_siswa extends javax.swing.JFrame {
 
         jLabel4.setText("Jenis Kelamin");
 
+        buttonGroup3.add(rbLaki);
         rbLaki.setSelected(true);
         rbLaki.setText("Laki-Laki");
 
+        buttonGroup3.add(rbPerempuan);
         rbPerempuan.setText("Perempuan");
 
         jLabel5.setText("Jurusan");
@@ -327,8 +328,7 @@ dispose();
     public javax.swing.JButton btnKeluar;
     public javax.swing.JButton btnSimpan;
     public javax.swing.JButton btnUbah;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
     public javax.swing.JComboBox<String> cbJurusan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
