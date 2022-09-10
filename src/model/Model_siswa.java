@@ -120,10 +120,10 @@ public class Model_siswa implements controller.Controller_siswa {
     
     @Override
     public void Baru(Form_siswa siswa) throws SQLException {
-//        siswa.txtNIS.setText("");
-//        siswa.txtNama.setText("");
-//        siswa.rbLaki.setSelected(true);
-//        siswa.cbJurusan.setSelectedIndex(0);
+        siswa.txtNIS.setText("");
+        siswa.txtNama.setText("");
+        siswa.rbLaki.setSelected(true);
+        siswa.cbJurusan.setSelectedIndex(0);
     }
     
     @Override
